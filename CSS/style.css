@@ -132,35 +132,33 @@ footer {
     padding: 10px;
         }
 
-        @media only screen and (max-width: 600) {
-          .heroGrid {
-            grid-template-rows: 300px 300px;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "heroImg"
-            "content"
-            ;
-          }
-
-          @media only screen and (max-width: 600)
-          {.mySkills {
-            grid-template-rows: 300px 300px 300px;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "Adobe"
-            "Figma"
-            "Miro"
-            ;
-          }
-
-          @media only screen and (max-width: 600)
-          {.myWork {
-            grid-template-rows: 300px 300px 300px 300px;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "outFrontpic"
-            "outFront"
-            "foodApppic"
-            "foodApp"
-            ;
-          }};
+        @media only screen and (max-width: 600px) {
+        .heroGrid {
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "heroImg"
+        "content"
+        ;
+        }
+        
+        .mySkills {
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Adobe"
+        "Figma"
+        "Miro"
+        ;
+        }
+        
+        .myWork {
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "outFrontpic"
+        "outFront"
+        "foodApppic"
+        "foodApp"
+        ;
+        }};
