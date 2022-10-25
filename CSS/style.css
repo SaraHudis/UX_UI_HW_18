@@ -71,12 +71,19 @@ button {
 }
 
 .mySkills {
+    background-image: url(/UX_UI_HW_18/images/black\ image.png);
     display: flex;
     padding: 20px;
     margin: 20px;
     justify-content: center;
 }
 
+.myWork {
+    background-image: url(/UX_UI_HW_18/images/Purple\ image.png);
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+       }
 
 .flexContainer{
 display: flex;
@@ -90,14 +97,6 @@ padding: 10%;
     grid-area:
     'outFrontpic outFront'
     'foodApppic foodAppp';
-}
-
-#outFrontpic {
-    justify-content: left;
-}
-
-#foodApppic {
-    justify-content: left;
 }
 
 footer {
