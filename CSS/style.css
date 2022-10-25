@@ -72,17 +72,16 @@ button {
 
 .mySkills {
     display: flex;
-    padding: 40px;
-    margin: 40px;
+    padding: 20px;
+    margin: 20px;
     justify-content: center;
 }
 
 
 .flexContainer{
 display: flex;
-width: 100%%;
-margin-top: 20px;
-flex-direction: row;
+width: 100%;
+padding: 10%;
 }
 
 .workGrid {
@@ -116,8 +115,11 @@ footer {
         flex-direction:row;
         justify-content: center;
         padding: 15px;
-
     }
+
+.socialMedia > img {
+    padding: 15px;
+}
 
 .bottomMenu {
     display: flex;
@@ -127,7 +129,7 @@ footer {
 }
         
 .bottomMenu > p {
-    padding: 15px;
+    padding: 10px;
         }
 
         @media only screen and (max-width: 600) {
@@ -139,7 +141,9 @@ footer {
             "content"
             ;
           }
-          .mySkills {
+
+          @media only screen and (max-width: 600)
+          {.mySkills {
             grid-template-rows: 300px 300px 300px;
             grid-template-columns: 1fr;
             grid-template-areas: 
@@ -148,7 +152,9 @@ footer {
             "Miro"
             ;
           }
-          .myWork {
+
+          @media only screen and (max-width: 600)
+          {.myWork {
             grid-template-rows: 300px 300px 300px 300px;
             grid-template-columns: 1fr;
             grid-template-areas: 
@@ -157,6 +163,4 @@ footer {
             "foodApppic"
             "foodApp"
             ;
-          }
-
-        }
+          }};
