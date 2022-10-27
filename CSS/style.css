@@ -1,6 +1,11 @@
 .navigation{
     background-color: black;
 }
+
+* {margin: 0;
+padding: 0;
+}
+
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -66,37 +71,28 @@ button {
     width: 140px;
     background-color: #984df7;
     color: white;
-    text-shadow: 4px;
-    
+    text-shadow: 4px; 
 }
-
-.mySkills {
-    background-image: url(/UX_UI_HW_18/images/black\ image.png);
-    display: flex;
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-}
-
-.myWork {
-    background-image: url(/UX_UI_HW_18/images/Purple\ image.png);
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-       }
 
 .flexContainer{
 display: flex;
-width: 100%;
-padding: 10%;
+flex-direction: row;
+justify-content: center;
+padding-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .workGrid {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    /* grid-template-columns: 50% 50%;
     grid-area:
     'outFrontpic outFront'
-    'foodApppic foodAppp';
+    'foodApppic foodAppp'; */
 }
 
 footer {
@@ -133,31 +129,47 @@ footer {
 
         @media only screen and (max-width: 600px) {
         .heroGrid {
-        grid-template-rows: 300px 300px;
+        /* grid-template-rows: 300px 300px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "heroImg"
-        "content"
+        "content" */
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
         ;
         }
         
         .mySkills {
-        grid-template-rows: 300px 300px 300px;
+        /* grid-template-rows: 300px 300px 300px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "Adobe"
         "Figma"
-        "Miro"
+        "Miro" */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
         ;
         }
         
         .myWork {
-        grid-template-rows: 300px 300px 300px 300px;
+        /* grid-template-rows: 300px 300px 300px 300px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "outFrontpic"
         "outFront"
         "foodApppic"
-        "foodApp"
+        "foodApp" */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
         ;
         }};
