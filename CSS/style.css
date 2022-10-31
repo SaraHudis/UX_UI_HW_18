@@ -1,50 +1,41 @@
-.navigation{
+body {
+    margin:0;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif; 
+}
+  .navigation {
+    display: flex;
+    width: 100%;
     background-color: black;
-}
-
-* {margin: 0;
-padding: 0;
-}
-
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-}
-
-#navigation {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
   }
 
-.logo {
-   padding-left: 20px;
-   padding-top: 5px;
-   padding-right: 10px;
-   padding-bottom: 5px;
-   margin: 20px;
-}
-
-#nav {
+  .logo {
     display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+
+  .menuItem {
+    display: flex;
+    width: 75%;
     flex-direction: row;
-    margin: 0px 5%;
-  }
+    justify-content: center;
+    }
+    
+    .menuItem > p {
+    padding: 15px;
+    }
 
+  h1 {
+    font-weight:300;
+    letter-spacing: 2px;
+    font-size:48px;
+  }
+  
 header {
 color: white;
-}
-
-.hyperlink {
-display: flex;
-width: 75%;
-flex-direction: row;
-justify-content: center;
-}
-
-.hyperlink > p {
-padding: 15px;
 }
 
 .heroGrid {
@@ -52,16 +43,18 @@ padding: 15px;
 }
 
 .heroImg {
-    height: 500px;
+    height: 300px;
+    margin-bottom: 5%;
     padding: 3%;
     width: 45%;
     justify-content: left;
 }
 
 .content {
-    height: 500px;
-    padding: 3%;
-    width:40%;
+    height: 300px;
+    padding-top: 50px;
+    width:45%;
+    padding-top: 50px;
     margin: 0 auto;
     justify-content: right;
 }
@@ -96,7 +89,7 @@ margin-bottom: 20px;
 }
 
 footer {
-    background-color:#373738;
+    background-color:black;
     display: flex;
     width: 100%;
     color: white;
@@ -127,19 +120,17 @@ footer {
     padding: 10px;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media (max-width: 768px) {
         .heroGrid {
         /* grid-template-rows: 300px 300px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "heroImg"
         "content" */
-        justify-content: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-bottom: 100px;
-        margin-bottom: 100px;
+        margin-bottom: auto;
         ;
         }
         
